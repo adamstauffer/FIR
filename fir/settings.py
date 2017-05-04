@@ -24,6 +24,13 @@ TEMPLATES[0]['OPTIONS']['loaders'] = (
     'django.template.loaders.app_directories.Loader',
 )
 
+CROWD = {
+    'url': 'https://crowd.company.com/crowd/rest',
+    'app_name': 'crowd_app',
+    'password': 'crowd_password',
+    'superuser': False,
+}
+
 # Dummy key for development
 SECRET_KEY = 'DUMMY_KEY_FOR_DEVELOPMENT_DO_NOT_USE_IN_PRODUCTION'
 

@@ -66,6 +66,7 @@ MIDDLEWARE_CLASSES = (
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',  # default
     'incidents.authorization.ObjectPermissionBackend',
+    'crowd.backends.CrowdBackend'
 )
 
 # Absolute filesystem path to the directory that will hold user-uploaded files
